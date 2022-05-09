@@ -42,12 +42,8 @@ For this you can use,
 		df['clean_text'] = a
 		df['redacted_names'] = label
 and df to check the updated dataframe.
-3. remove_columns()
-This function, as it says, removes the previous columns (unprocessed) and 
-updates the dataframe with only the required data.
-You can use,
-		df = remove_columns(df,'username','names','redacted_text')
-		df
+3. remove_columns
+This is not a function. I have used 'del' command to delete these columns
 4. letter_count()
 This function counts the number of letters of the redacted text, and updates in
 the dataframe.
@@ -89,6 +85,8 @@ This function uses the KNeighborsClassifier model to predict the unredacted word
 12. evaluate()
 Finally the evaluate functions returns the precision, recall and f1 scores
 	train_precision_score, val_precision_score, train_recall_score, val_recall_score, train_f1_score, val_f1_score = evaluate(model,predict_y_train,predict_y_val,y_train,y_val)
+
+The output will be in a list format. I faced some challeges with pandas
 
 Sorry, but I was not able to add all the tests. But the code should run correct. 
 
