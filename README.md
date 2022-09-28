@@ -1,8 +1,6 @@
-# cs5293sp22project3
+# Unredactor
 
-Hello, hope you are doing well. Thank you for grading my project.
 
-I have used pandas to load the data in a dataframe
 Code Structure:
 1. The code reads the tsv file and loads it in a dataframe
 2. The data is then processed to remove special characters and punctuations and saves 
@@ -86,11 +84,7 @@ This function uses the KNeighborsClassifier model to predict the unredacted word
 Finally the evaluate functions returns the precision, recall and f1 scores
 	train_precision_score, val_precision_score, train_recall_score, val_recall_score, train_f1_score, val_f1_score = evaluate(model,predict_y_train,predict_y_val,y_train,y_val)
 
-The output will be in a list format. I faced some challeges with pandas
 
-Sorry, but I was not able to add all the tests. But the code should run correct. 
-
-Thanks you again for grading my code
 
 
  
